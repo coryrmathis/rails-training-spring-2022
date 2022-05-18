@@ -1,0 +1,3 @@
+Rspec
+FactoryGirl
+Faker
