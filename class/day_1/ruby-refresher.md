@@ -7,13 +7,13 @@
   - [Keyword vs. Positional Arguments](#keyword-vs-positional-arguments)
   - [Modules](#modules)
 
-We'll use the [Ruby docs](https://ruby-doc.org/core-2.6.6/) so keep them handy.
+We'll use the [Ruby docs](https://ruby-doc.org/core-2.7.2/) so keep them handy.
 
 Ruby is an object oriented programming language. Every object is an instance of
-a class and classes are defined by state (what my baby is born with) and
-behavior (methods).
+a class and classes are defined by state (data) and
+behavior (methods/functions).
 
-It might be easiest to create a new folder that will hold all our training materials. Let's create a new directory `mkdir td-training` and `touch` a new file `example.rb`.
+There is a `./code` directory in each day folder for you to keep the code we write together.  This will be useful for you to commit and push up the code to share with your pairing partner as well as if you'd like some feedback from me.  Feel free to make a pull request against the `main` branch and tag me!
 
 ```ruby
 class Dog
