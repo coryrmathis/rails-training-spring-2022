@@ -25,3 +25,9 @@
 1. [FactoryBot](https://github.com/thoughtbot/factory_bot_rails)
 1. [Faker](https://github.com/faker-ruby/faker)
 1. [Dotenv](https://github.com/bkeepers/dotenv)
+
+
+
+ctrl-~
+cmd-k
+ctrl-l
