@@ -19,15 +19,16 @@
 1. [Dry Validations](https://github.com/dry-rb/dry-validation)
 1. [Devise](https://github.com/heartcombo/devise)
 1. [Papertrail](https://github.com/paper-trail-gem/paper_trail)
-1. [Kaminari](https://github.com/kaminari/kaminari)
-1. [Sidekiq](https://github.com/mperham/sidekiq)
-1. [Rspec](https://github.com/rspec/rspec-rails)
-1. [FactoryBot](https://github.com/thoughtbot/factory_bot_rails)
-1. [Faker](https://github.com/faker-ruby/faker)
-1. [Dotenv](https://github.com/bkeepers/dotenv)
+1. [Kaminari](https://github.com/kaminari/kaminari) (Pagination)
+1. [Sidekiq](https://github.com/mperham/sidekiq) (Background jobs)
+1. [Rspec](https://github.com/rspec/rspec-rails) (Preferred testing library)
+1. [FactoryBot](https://github.com/thoughtbot/factory_bot_rails) (Alternative to fixtures for testing)
+1. [Faker](https://github.com/faker-ruby/faker) (Generate fake data for testing/development)
+1. [Dotenv](https://github.com/bkeepers/dotenv) (Load environment variables)
+1. [SmarterCSV](https://github.com/tilo/smarter_csv) (Alternative CSV Parsing)
 
+### Useful Mac Keyboard Shortcuts
 
-
-ctrl-~
-cmd-k
-ctrl-l
+- Open VS Terminal: `CTRL + ~`
+- Clear Terminal(Permanent): `CMD + K`
+- Clear Terminal(Scrollable): `CTRL + L`
