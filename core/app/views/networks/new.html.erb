@@ -1,4 +1,1 @@
-<%=form_for @network do |f|%>
-<%=f.text_field :name%>
-<%=f.submit%>
-<%end%>
+<%=render partial: "form", locals: {network: @network}%>

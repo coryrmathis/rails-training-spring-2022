@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <h2>Inside the application.html.erb template</h2>
+    <%if flash[:network_errors]%>
+      <div><%=flash[:network_errors]%></div>
+    <%end%>
     <%= yield %>
   </body>
 </html>

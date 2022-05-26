@@ -1,30 +1,13 @@
 class NetworksController < ApplicationController
-    include Pundit::Authorization
-    
+
     def index 
         @networks = Network.all
-        render json: current_usere
     end
 
     def show
         @network = Network.find(params[:id])
-        authorize @network
     end
 
-    def edit 
-        @network = Network.find(params[:id])
-    end
-
-    def update
-        @network = Network.find(params[:id])
-
-        if @network.update
-            redirect_to @network
-        else
-            render json: @network.errors.full_messages
-        end
-    end
-    
     def new 
         @network = Network.new
     end
@@ -35,7 +18,23 @@ class NetworksController < ApplicationController
         if @network.save 
             redirect_to @network
         else
-            render json: @network.errors.full_messages
+            flash[:network_errors] = @network.errors.full_messages.join(", ")
+            render :new
+        end
+    end
+
+    def edit 
+        @network = Network.find(params[:id])
+    end
+
+    def update
+        @network = Network.find(params[:id])
+
+        if @network.update(network_params)
+            redirect_to @network
+        else
+            flash[:network_errors] = @network.errors.full_messages.join(", ")
+            render :new
         end
     end
 
@@ -43,7 +42,7 @@ class NetworksController < ApplicationController
         @network = Network.find(params[:id])
 
         if @network.destroy 
-            redirect_to :index
+            redirect_to networks_path
         end
     end
 

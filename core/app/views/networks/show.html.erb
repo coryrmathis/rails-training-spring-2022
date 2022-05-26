@@ -1,0 +1,5 @@
+<h1>Network: <%=@network.name%></h1>
+<div>State: <%=@network.state%></div>
+<%= form_for @network, method: :delete do |form| %>
+  <%= form.submit "Delete" %>
+<% end %>
