@@ -46,6 +46,11 @@ class NetworksController < ApplicationController
         end
     end
 
+    def export
+        NetworksExportJob.perform_async(Network.first.id) 
+        redirect_to "/networks"
+    end
+
     private 
 
     def network_params 
