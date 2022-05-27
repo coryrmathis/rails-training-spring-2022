@@ -89,6 +89,11 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.5.0)
     erubi (1.10.0)
+    factory_bot (6.1.0)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.1.0)
+      factory_bot (~> 6.1.0)
+      railties (>= 5.0.0)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -97,6 +102,18 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
     launchy (2.5.0)
       addressable (~> 2.7)
     letter_opener (1.7.0)
@@ -254,7 +271,9 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   devise
+  factory_bot_rails
   jbuilder (~> 2.7)
+  kaminari
   letter_opener
   listen (~> 3.3)
   pg (~> 1.1)

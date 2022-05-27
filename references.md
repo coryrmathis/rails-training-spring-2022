@@ -15,9 +15,9 @@
 
 ### Common Gems
 
-1. [Pundit](https://github.com/varvet/pundit)
-1. [Dry Validations](https://github.com/dry-rb/dry-validation)
-1. [Devise](https://github.com/heartcombo/devise)
+1. [Pundit](https://github.com/varvet/pundit) (Authorization)
+1. [Dry Validations](https://github.com/dry-rb/dry-validation) (Validate request structure and data)
+1. [Devise](https://github.com/heartcombo/devise) (User authentication etc.)
 1. [Papertrail](https://github.com/paper-trail-gem/paper_trail)
 1. [Kaminari](https://github.com/kaminari/kaminari) (Pagination)
 1. [Sidekiq](https://github.com/mperham/sidekiq) (Background jobs)

@@ -1,7 +1,7 @@
 class NetworksController < ApplicationController
 
     def index 
-        @networks = Network.all
+        @networks = Network.all.page(params[:page]).per(10)
     end
 
     def show

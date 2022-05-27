@@ -62,3 +62,7 @@ gem 'devise'
 gem "pundit", "~> 2.2"
 
 gem "sidekiq", "~> 6.4"
+
+gem "kaminari"
+
+gem "factory_bot_rails"
