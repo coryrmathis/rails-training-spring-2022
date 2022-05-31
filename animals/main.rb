@@ -14,4 +14,6 @@ animal = Animal.new(options)
 
 dog = Dog.new(options)
 
-p dog.class.superclass
+# p dog.class.superclass
+
+puts dog.bark
