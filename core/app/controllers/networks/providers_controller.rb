@@ -1,2 +1,0 @@
-Networks::ProvidersController < ApplicationController
-end
